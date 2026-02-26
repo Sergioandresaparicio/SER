@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Actualizaciones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .update-center {
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 { text-align: center; color: #22d3ee; }
+        
+        .timeline {
+            border-left: 2px solid #334155;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        .update-card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .update-card::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 20px;
+            width: 10px;
+            height: 10px;
+            background: #22d3ee;
+            border-radius: 50%;
+        }
+        .version-tag {
+            font-size: 0.8rem;
+            background: #334155;
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #94a3b8;
+        }
+        ul { padding-left: 20px; color: #cbd5e1; }
+        li { margin-bottom: 5px; }
+
+        .btn-next {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            padding: 15px;
+            background: #22d3ee;
+            color: #0f172a;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="update-center">
+        <h1><i class="fa-solid fa-cloud-arrow-down"></i> Actualizaciones</h1>
+        
+        <div class="timeline">
+            <div class="update-card">
+                <span class="version-tag">Próximamente</span>
+                <h3>Parche v.1.1</h3>
+                <ul>
+                    <li>Nuevo módulo de "Derecho Procesal" instalado.</li>
+                    <li>Mejora en la interfaz de "Argumentación Jurídica".</li>
+                </ul>
+            </div>
+
+            <div class="update-card">
+                <span class="version-tag">Futuro</span>
+                <h3>Versión v.2.0</h3>
+                <ul>
+                    <li>Integración completa del módulo "Desarrollo de Software" con el núcleo de "Derecho Ambiental".</li>
+                    <li>Nuevo feature: "Gestión de Proyectos Sostenibles".</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="slide9.html" class="btn-next">Soporte y Contacto</a>
+    </div>
+</body>
+</html>

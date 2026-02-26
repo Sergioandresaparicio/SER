@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0; /* Terminal Green */
+            font-family: 'Share Tech Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .terminal-window {
+            border: 1px solid #333;
+            background: #0a0a0a;
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+        }
+        h1 { border-bottom: 2px solid #0f0; padding-bottom: 10px; margin-top: 0; }
+        .spec-item { margin-bottom: 15px; display: flex; justify-content: space-between; border-bottom: 1px dashed #333; padding-bottom: 5px; }
+        .spec-label { color: #888; }
+        .spec-value { color: #fff; font-weight: bold; }
+        
+        .btn-next {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #0f0;
+            color: #000;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal-window">
+        <h1>root@sergio:~# cat especificaciones.txt</h1>
+        
+        <div class="spec-item">
+            <span class="spec-label">Nombre del Paquete:</span>
+            <span class="spec-value">com.sergioaparicio.humanware</span>
+        </div>
+        <div class="spec-item">
+            <span class="spec-label">Versión Actual:</span>
+            <span class="spec-value">1.0 (En constante desarrollo)</span>
+        </div>
+        <div class="spec-item">
+            <span class="spec-label">Última Actualización:</span>
+            <span class="spec-value" id="date">2023</span>
+        </div>
+        <div class="spec-item">
+            <span class="spec-label">Idiomas:</span>
+            <span class="spec-value">Español (Nativo), Inglés, Legal, Código</span>
+        </div>
+        <div class="spec-item">
+            <span class="spec-label">Compatibilidad:</span>
+            <span class="spec-value">Multidisciplinario, Aula, Juzgado, Campo</span>
+        </div>
+
+        <a href="slide5.html" class="btn-next">Ver Atributos del Sistema</a>
+    </div>
+
+    <script>
+        document.getElementById('date').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>

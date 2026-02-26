@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Herramientas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .toolbox {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 700px;
+        }
+        h1 { text-align: center; color: #0f172a; margin-bottom: 30px; }
+        
+        .skill-group {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f1f5f9;
+        }
+        .skill-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            min-width: 50px;
+            text-align: center;
+        }
+        .skill-content h3 { margin: 0 0 5px 0; color: #1e293b; }
+        .skill-content p { margin: 0; font-size: 0.9rem; color: #64748b; }
+
+        .btn-next {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            padding: 15px;
+            background: #0f172a;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="toolbox">
+        <h1><i class="fa-solid fa-toolbox"></i> Toolkit</h1>
+
+        <div class="skill-group">
+            <div class="skill-icon" style="color: #10b981;"><i class="fa-solid fa-dna"></i></div>
+            <div class="skill-content">
+                <h3>Herramientas del Biólogo</h3>
+                <p>Investigación, Análisis de datos ambientales, Trabajo de campo.</p>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-icon" style="color: #f59e0b;"><i class="fa-solid fa-book-open"></i></div>
+            <div class="skill-content">
+                <h3>Herramientas del Abogado</h3>
+                <p>Argumentación, Comprensión normativa, Redacción de informes.</p>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-icon" style="color: #3b82f6;"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-content">
+                <h3>Herramientas del Developer</h3>
+                <p>Python, HTML, Lógica de programación, Resolución de problemas.</p>
+            </div>
+        </div>
+
+        <a href="slide7.html" class="btn-next">Siguiente: Soft Skills</a>
+    </div>
+</body>
+</html>

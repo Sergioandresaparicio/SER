@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permisos del Sistema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1b4b; /* Indigo oscuro */
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .modal {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 40px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 { text-align: center; font-size: 1.8rem; margin-bottom: 30px; }
+        
+        .permission-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .perm-icon { font-size: 1.5rem; margin-right: 15px; color: #a5b4fc; }
+        .perm-text h4 { margin: 0; font-size: 1rem; }
+        .perm-text p { margin: 5px 0 0 0; font-size: 0.8rem; color: #c7d2fe; font-style: italic; }
+
+        .btn-next {
+            display: block;
+            margin-top: 30px;
+            padding: 15px;
+            background: #4f46e5;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .btn-next:hover { background: #4338ca; }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <h1><i class="fa-solid fa-shield-halved"></i> Permisos Concedidos</h1>
+        <p style="text-align: center; margin-bottom: 20px; font-size: 0.9rem; opacity: 0.8;">Esta aplicación solicita los siguientes permisos para funcionar correctamente:</p>
+
+        <div class="permission-item">
+            <i class="fa-solid fa-ear-listen perm-icon"></i>
+            <div class="perm-text">
+                <h4>Escucha Activa</h4>
+                <p>"Esta app escucha atentamente antes de responder."</p>
+            </div>
+        </div>
+
+        <div class="permission-item">
+            <i class="fa-solid fa-hand-holding-heart perm-icon"></i>
+            <div class="perm-text">
+                <h4>Solidaridad</h4>
+                <p>"Esta app tiende la mano sin esperar nada a cambio."</p>
+            </div>
+        </div>
+
+        <div class="permission-item">
+            <i class="fa-solid fa-users perm-icon"></i>
+            <div class="perm-text">
+                <h4>Compañerismo</h4>
+                <p>"Ideal para proyectos grupales. Modo cooperativo."</p>
+            </div>
+        </div>
+
+        <div class="permission-item" style="border: 1px solid #f472b6;">
+            <i class="fa-solid fa-martini-glass-citrus perm-icon" style="color: #f472b6;"></i>
+            <div class="perm-text">
+                <h4>Modo Fiesta</h4>
+                <p>"Permiso para activar el ocio y la diversión (Fuera de horario laboral)."</p>
+            </div>
+        </div>
+
+        <a href="slide8.html" class="btn-next">Continuar</a>
+    </div>
+</body>
+</html>

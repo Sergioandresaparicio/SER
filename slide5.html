@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos del Sistema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 { margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .stat-container { width: 100%; max-width: 500px; }
+        .stat-row { margin-bottom: 25px; }
+        .stat-label { display: flex; justify-content: space-between; margin-bottom: 5px; font-weight: bold; }
+        
+        .progress-bar {
+            height: 20px;
+            background: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Colores de barras */
+        .bar-study { width: 95%; background: #8b5cf6; }
+        .bar-dedication { width: 100%; background: #f59e0b; }
+        .bar-team { width: 90%; background: #06b6d4; }
+
+        /* Efecto Neón Party */
+        .party-text {
+            font-size: 1.5rem;
+            font-weight: 900;
+            background-image: linear-gradient(
+                to right, 
+                #ff0000, 
+                #ff7300, 
+                #fffb00, 
+                #48ff00, 
+                #00ffd5, 
+                #002bff, 
+                #7a00ff, 
+                #ff00c8, 
+                #ff0000
+            );
+            background-size: 400%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow 5s linear infinite;
+            text-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+        .party-bar { width: 100%; background: linear-gradient(90deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff); animation: rainbow 3s linear infinite; }
+
+        @keyframes rainbow { 
+            0% { background-position: 0 0; }
+            100% { background-position: 400% 0; }
+        }
+
+        .btn-next {
+            margin-top: 40px;
+            padding: 15px 30px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-next:hover { transform: scale(1.1); }
+    </style>
+</head>
+<body>
+    <h1>Barra de Estado</h1>
+
+    <div class="stat-container">
+        <div class="stat-row">
+            <div class="stat-label">
+                <span>🔋 Energía</span>
+                <span class="party-text">NIVEL ALTO (RUMBA)</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill party-bar">100%</div>
+            </div>
+        </div>
+
+        <div class="stat-row">
+            <div class="stat-label">
+                <span>📚 Capacidad de Estudio</span>
+                <span>Infinity</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill bar-study">∞</div>
+            </div>
+        </div>
+
+        <div class="stat-row">
+            <div class="stat-label">
+                <span>⚙️ Dedicación</span>
+                <span>100%</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill bar-dedication">100%</div>
+            </div>
+        </div>
+
+        <div class="stat-row">
+            <div class="stat-label">
+                <span>🤝 Trabajo en Equipo</span>
+                <span>Co-op Activado</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill bar-team">90%</div>
+            </div>
+        </div>
+    </div>
+
+    <a href="slide6.html" class="btn-next">Ver Skills <i class="fa-solid fa-wrench"></i></a>
+</body>
+</html>

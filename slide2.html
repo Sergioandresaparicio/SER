@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritorio Principal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');
+            background-size: cover;
+            background-blend-mode: overlay;
+        }
+        .desktop-container {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 { margin-top: 0; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .app-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .app-icon:hover { transform: translateY(-5px); }
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .bio { background: linear-gradient(135deg, #10b981, #059669); }
+        .law { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .justice { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+        .dev { background: linear-gradient(135deg, #ec4899, #db2777); }
+        .menu-btn { background: linear-gradient(135deg, #3b82f6, #2563eb); border: 2px solid #fff; }
+        
+        .app-name { font-weight: bold; font-size: 0.9rem; }
+        .app-desc { font-size: 0.75rem; color: #cbd5e1; }
+        
+        .next-btn {
+            margin-top: 40px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-container">
+        <h1><i class="fa-solid fa-desktop"></i> Escritorio Principal</h1>
+        <p>Presenta las carpetas principales de tu vida.</p>
+
+        <div class="app-grid">
+            <div class="app-icon">
+                <div class="icon-box bio"><i class="fa-solid fa-leaf"></i></div>
+                <span class="app-name">Biología</span>
+                <span class="app-desc">Mi pasión por la vida</span>
+            </div>
+
+            <div class="app-icon">
+                <div class="icon-box law"><i class="fa-solid fa-scale-balanced"></i></div>
+                <span class="app-name">Ley Ambiental</span>
+                <span class="app-desc">Mi misión de protegerla</span>
+            </div>
+
+            <div class="app-icon">
+                <div class="icon-box justice"><i class="fa-solid fa-gavel"></i></div>
+                <span class="app-name">Derecho</span>
+                <span class="app-desc">Mi herramienta para la justicia</span>
+            </div>
+
+            <div class="app-icon">
+                <div class="icon-box dev"><i class="fa-solid fa-code"></i></div>
+                <span class="app-name">Dev Software</span>
+                <span class="app-desc">Mi lenguaje para el futuro</span>
+            </div>
+        </div>
+
+        <a href="slide3.html" class="next-btn">Abrir Menú Principal <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</body>
+</html>
